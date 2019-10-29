@@ -1,0 +1,159 @@
+https://codepen.io/nicci498/pen/bGGoVRV?editors=1100
+
+1. What is Semantic HTML? 
+	a) Semantic HTML is markup tat provides meaning to our code
+
+    2. What is HTML used for? 
+	a)Marking upp the content of our page: text images links etc
+
+    3. What is an attribute and where do we put it?
+	a) provide additional meaning/ use to our tags <div CLASS="is attribute" NAME ="is another attribute" ID="is also attribute"> 
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+	a) Main heading of page; once
+
+    5. Name two tags that have required attributes
+	a)<img> <a>
+
+    6. What do we put in the head of our HTML document? 
+	a)<!DOCTYPEhtml> 
+
+    7. What is an id? 
+	a) a very specific selector that can only be used once; not so much for styling as linking to a place in our page
+
+    8. What elements can I add an id to? 
+	a)The id attribute can be used on any HTML element
+
+    9. How many times can I use the same id on a page? 
+	a)once
+
+    10. What is a class? 
+	a) an attribute that can be applied to multiple elements in a project 
+
+    11. What elements can I add a class to? 
+	a)class attribute can be used on any HTML element
+
+    12. How many times can I use the same class on a page? 
+	a)as many as needed
+
+    13. How do I get my link to open in a new tab?
+	a)the target attribute >> <a href = "url" TARGET="BLANK">visablestuff</a>
+
+    14. What is the alt attribute used for? 
+	a) to describe an image if it doesnt show up as expected
+
+    15. How do I reference an id?
+	a) #id
+
+    16. What is the difference between a section and a div
+	a) a section is semantic, or provides meaning, a div is not semantic
+
+    17. What is CSS used for? 
+	a) styling our projects (the paint)
+
+    18. How to we select an element? Example - every h2 on the page
+	a) h2{} nav{} img{} p{} a{} div{} section{} header{} footer{}
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+	a) a class can be used on multiple elements an id only have one: a class to style all the <h2> and id to target a destination (like contact in the footer)
+
+    20. How do we select classes in CSS?
+	a) .class{
+
+    21. How do we select a p element with a single class of “human””?
+	a)p.human{
+
+    22. What is a parent child selector? When would this be useful? 
+	a)element>element selector is used to select elements with a specific parent, elements that are not directly a child of the specified parent, are not selected
+	useful when there are many elements nested in with eachother that you wish to style diferently
+
+
+
+    23. How do you select all links within a div with the class of sidebar?
+	a) .sidebar a{
+
+    24. What is a pseudo selector?
+	a)selects elements that are in a specific state  ie: :hover :last-child :first-child
+
+
+
+    25. What do we use the change the spacing between lines?
+	a)line-height: num;
+
+    26. What do we use to change the spacing between letters?
+	a)  letter-spacing: px;
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+	a) text-transform:uppercase/lowercase/capitalize
+
+    28. How do I add a 1px border around my div that is dotted and black?
+	a) div{
+	     border: 1px dotted black;
+		}
+
+    29. How do I select everything on the page? 
+	a)  *{}
+
+    30. How do I write a comment in CSS?
+	a) //single line /*multi line*/
+
+    31. How do I find out what file I am in, when I am using the command line? 
+	a) pwd (print working directory)
+
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+	a) ls
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+	a) rm, cant undo no recycle bin
+
+    34. Why should I use version control? 
+	a)
+    35. How often should I commit to github?
+	a) often, aprx every 20 min
+
+  36. What is the command we would use to push our repo up to github? 
+	git push
+
+    37. Walk me through Lambda's git flow. 
+
+Step 1 - Fork  - create own version of repo
+Step 
+2 - Collaborate (TL) setting, collaborators, TL handle
+
+Step 3 - Clone - copy url, git clone url
+
+Step 4 - Branch - create own branch with firstname-lastname
+cd into project 
+git checkout -b 'nicole-white'
+git 
+checkout command lets you navigate between the branches created by git branch . 
+Checking out a branch updates the files in the working directory to match the version stored in that branch, and it tells Git to record all new commits on that branch.
+                 
+3.  Run git branch to ensure branch created properly
+   
+4.  Push to origin nicole-white (not master)
+   
+5. Use my fork(not lambda) as a base-fork (compare against all forks), compare and pull (green button)
+   
+6. Add your TL as a reviewer, open pull request, open side bar "reviewers" choose TL
+ 
+7. Once TL reviews and and accepts changes, and BOOMLambda
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+	a) block-level elements always start on a new line and stretches out to the left and right as far as it can
+	inline-level elements inline element does not start on a new line and only takes up as much width as needed
+
+    2. What happens when an element is positioned absolutely? 
+	a)positioned relative to the nearest positioned parent(grand/great) or if no positioned parent it fixes to position on page and scrolls with user
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+	a)display:inline-block
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+	a)inline-block:button    inline: span/img/a    block: div/heading tags/p tags
+
+    5. In your own words, explain the box model. What is the fix for the box model?  
+	a) box model is the basis of positioning/sizing elements on our projects, includes content>padding>border>margin: border-box to contain all of the padding/margins inside of the prescribed size of element rather than allowing it to grow as we add padding/border/margin
